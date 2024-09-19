@@ -10,6 +10,22 @@ It covers:
 * EBNF, [ISO/IEC 14977 (1996)](https://www.cl.cam.ac.uk/~mgk25/iso-14977.pdf)
 * EBNF, [W3C](https://www.w3.org/TR/xml/); IETF [RFC 4646](https://www.ietf.org/rfc/rfc4646.txt),[RFC 4647](https://www.ietf.org/rfc/rfc4647.txt)
 
+| Style | Name | Rule | Terminal | Non Terminal  | Concat | Choice | Optional |
+|---|---|---|---|---|---|---|---|
+| BNF  | BNF (Algol 60)  | `<name>::=...`  | `...` | `<...>` |   | '`\|`' | note1  |
+| Intermediate | ANSI C  | `name:\n...` | `...`  | bold | italics |   | indented line one of | ...opt  |
+| Intermediate | BNF-like description of URLs | `name\n  ...` | `...` | `...` | | '`\|`' | `[...]` |
+| Wirth | Wirth | `name=... .`  | `...` | `...` | | | `[...]` | 
+| Wirth | SAIF and Bungisoft | `<name>::=... ` | `...` | `<...>` |  | '`\|`' | `[...]` |
+| Wirth | EBNF from Compiler Basics by J.A.Farrell  | `name:==...`  | `'...'` | `...` |  | '`\|`' or `[... \| ...]` | `[...]`  | 
+| Wirth | Pascal EBNF Definition  | `name\n...` | |  `...`\n*bold*  | `<...>` |  '`\|`' | '[...]'  |  
+| Wirth | ISO Extended Pascal  | `name=... .\nname\>... .` | `'...'` | `...` | '`,`'  | '`\|`' | `[...]` | 
+| Wirth | ISO EBNF  | `name=...;` | `'...'\n...` | `...` |  '`,`'  | '`\|`' | `[...]` | 
+| ABNF | EBNF from RFC822 (superceded by ABNF)  | `name=...`  | integer\n`\"...\"` | `...`\n`<...>` |   | '`/`' | `[...]` |
+| ABNF | ABNF (RFC2234) | `name=...`  | integer\n`\"...\"` | `...\n<...>` | | '`/`' | `[...]` |
+
+
+
 BNF
 ===
 
